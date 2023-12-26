@@ -1,10 +1,4 @@
-<%-- 
-    Document   : index.jsp
-    Created on : Dec 25, 2023, 10:59:14 PM
-    Author     : localadmin
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
