@@ -99,7 +99,7 @@ stages:
          mavenPomFile: 'pom.xml'
          mavenOptions: '-Xmx3072m'
          javaHomeOption: 'JDKVersion'
-         jdkVersionOption: '1.8'
+         jdkVersionOption: 'default'
          jdkArchitectureOption: 'x64'
          publishJUnitResults: true
          testResultsFiles: '**/surefire-reports/TEST-*.xml'
@@ -111,7 +111,7 @@ stages:
          TargetFolder: '$(Build.ArtifactStagingDirectory)'
     - task: CmdLine@2
       inputs:
-        script: ren $(Build.Artifactstagingdirectory)\target\mylab-1.0-SNAPSHOT.war 
+        script: ren $(Build.Artifactstagingdirectory)\target\*.war 
                     Live2.war
     - task: CopyFilesOverSSH@0
       inputs:
