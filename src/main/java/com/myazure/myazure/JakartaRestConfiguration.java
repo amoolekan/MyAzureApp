@@ -1,5 +1,5 @@
 //package com.mylab.mylab;
-package com.myazureapp.muazureapp;
+package com.myazure.myazure;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
