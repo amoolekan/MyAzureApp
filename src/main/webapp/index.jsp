@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Site</title>
+        <title>JSP Site OK</title>
     </head>
     <body>
         <h1>Hello World Again!</h1>
