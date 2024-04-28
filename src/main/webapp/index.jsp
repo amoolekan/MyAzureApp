@@ -5,10 +5,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>MyLab</title>
+        <title>MyAzureLab</title>
     </head>
     <body>
-        <h1>Welcome To Lekan DevOps Compplete V9!</h1>
+        <h1>Welcome To Lekan AzureDevOps Compplete V9!</h1>
  <form action="MyWebFormServlet_1" method="POST">
   <label>First name:</label><br>
   <input type="text" name="firstname"><br>
