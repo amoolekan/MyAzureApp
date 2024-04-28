@@ -55,7 +55,7 @@ stages:
 
     - task: CmdLine@2
       inputs:
-        script: ren $(Build.Artifactstagingdirectory)\target\mylab-1.0-SNAPSHOT.war 
+        script: ren $(Build.Artifactstagingdirectory)\target\*.war 
                     Test2.war
 
     - task: CopyFilesOverSSH@0
