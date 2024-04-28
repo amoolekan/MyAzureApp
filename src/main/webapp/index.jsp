@@ -1,11 +1,20 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Site OK</title>
+        <title>MyLab</title>
     </head>
     <body>
-        <h1>Hello World Again!</h1>
+        <h1>Welcome To Lekan DevOps Compplete V9!</h1>
+ <form action="MyWebFormServlet_1" method="POST">
+  <label>First name:</label><br>
+  <input type="text" name="firstname"><br>
+  <label>Last name:</label><br>
+  <input type="text" name="lastname" ><br><br>
+  <input type="submit" value="Submit">
+</form> 
     </body>
 </html>
