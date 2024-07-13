@@ -136,6 +136,8 @@ stages:
          ArtifactName: 'drop'
          publishLocation: 'Container'
 
+# Azure Web App Service
+# Block below will deploy the package to Azure Web Service
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
@@ -145,6 +147,5 @@ stages:
         deployToSlotOrASE: true
         ResourceGroupName: 'Mylab'
         SlotName: 'production'
-        #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
         packageForLinux: '$(Build.Artifactstagingdirectory)/**/*.war'
         RuntimeStack: 'TOMCAT|9.0-java17'
