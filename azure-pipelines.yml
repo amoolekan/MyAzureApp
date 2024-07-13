@@ -27,8 +27,8 @@ stages:
           # Additional properties that will be passed to the scanner, 
           # Put one key=value per line, example:
           # sonar.exclusions=**/*.bin
-          sonar.projectKey=amoolekan_MyAzureSonar
-          sonar.projectName=MyAzureSonar
+          sonar.projectKey=amoolekan_myazuresonar
+          sonar.projectName=myazuresonar
        
     - task: Maven@4
       inputs:
