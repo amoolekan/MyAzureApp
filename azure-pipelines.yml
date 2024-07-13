@@ -135,3 +135,15 @@ stages:
          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
          ArtifactName: 'drop'
          publishLocation: 'Container'
+
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'Azure subscription 1(864b3e8b-6e9b-4a0f-85f8-a23f0c9bf672)'
+        appType: 'webAppLinux'
+        WebAppName: 'mywebappjava1'
+        deployToSlotOrASE: true
+        ResourceGroupName: 'Mylab'
+        SlotName: 'production'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        RuntimeStack: 'TOMCAT|9.0-java17'
