@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  MyAgent
+  MyAzureAgent
 
 stages:
 
