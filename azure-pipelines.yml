@@ -43,9 +43,9 @@ stages:
         sonarQubeRunAnalysis: true
         sqMavenPluginVersionChoice: 'latest'
 
-    - task: SonarCloudPublish@1
-      inputs:
-        pollingTimeoutSec: '300'  
+    #- task: SonarCloudPublish@1
+      #inputs:
+       # pollingTimeoutSec: '300'  
 
     - task: CopyFiles@2
       inputs:
