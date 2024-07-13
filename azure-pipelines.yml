@@ -18,17 +18,17 @@ stages:
     - checkout: self
       fetchDepth: 0
 
-    - task: SonarCloudPrepare@1
-      inputs:
-        SonarCloud: 'SonarCloud'
-        organization: 'amoolekan'
-        scannerMode: 'Other'
-        extraProperties: |
-          # Additional properties that will be passed to the scanner, 
-          # Put one key=value per line, example:
-          # sonar.exclusions=**/*.bin
-          sonar.projectKey=amoolekan_MyAzureSonar
-          sonar.projectName=MyAzureSonar
+    #- task: SonarCloudPrepare@1
+      #inputs:
+        #SonarCloud: 'SonarCloud'
+        #organization: 'amoolekan'
+        #scannerMode: 'Other'
+        #extraProperties: |
+         # # Additional properties that will be passed to the scanner, 
+         # # Put one key=value per line, example:
+         # # sonar.exclusions=**/*.bin
+         # sonar.projectKey=amoolekan_MyAzureSonar
+         # sonar.projectName=MyAzureSonar
        
     - task: Maven@4
       inputs:
@@ -43,9 +43,9 @@ stages:
         sonarQubeRunAnalysis: true
         sqMavenPluginVersionChoice: 'latest'
 
-    - task: SonarCloudPublish@1
-      inputs:
-        pollingTimeoutSec: '300'  
+    #- task: SonarCloudPublish@1
+     # inputs:
+      #  pollingTimeoutSec: '300'  
 
     - task: CopyFiles@2
       inputs:
