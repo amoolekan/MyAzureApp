@@ -60,7 +60,7 @@ stages:
 
     - task: CopyFilesOverSSH@0
       inputs:
-         sshEndpoint: 'SSHwebser'
+         sshEndpoint: 'SSHwebserver'
          sourceFolder: '$(Build.ArtifactStagingDirectory)'
          contents: '**/*.war'
          targetFolder: '/opt/tomcat/latest/webapps'
